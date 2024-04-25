@@ -92,7 +92,7 @@ function Home() {
                     <h2>Projects</h2>
                     <div className="row">
                         <div className="col">
-                            <a href="https://ishwar-coaching-centre.000webhostapp.com/ishwar_coaching/" className="anchor" target="_blank">
+                            <a href="https://ishwar-coaching-centre.000webhostapp.com/ishwar_coaching/" className="anchor" target="_blank" rel="noreferrer">
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/ishwar-coaching.png`} alt="Ishwar Coaching Center" width="400" height="250" />
@@ -110,7 +110,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://nanaksarkaleran.000webhostapp.com/" title="Nanaksar Kaleran" className="anchor" target="_blank" >
+                            <a href="https://nanaksarkaleran.000webhostapp.com/" title="Nanaksar Kaleran" className="anchor" target="_blank" rel="noreferrer" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/nanaksar-kaleran.png`} alt="Nanaksar Kaleran" width="400" height="250" />
@@ -128,7 +128,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://y2matecom.com/" title="Y2mate Com" className="anchor" target="_blank" >
+                            <a href="https://y2matecom.com/" title="Y2mate Com" className="anchor" target="_blank" rel="noreferrer" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/y2matecom.png`} alt="Y2matecom" width="400" height="250" />
@@ -146,7 +146,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://ishwar-coaching-centre.000webhostapp.com/devbook" title="DevBook" className="anchor" target="_blank" >
+                            <a href="https://ishwar-coaching-centre.000webhostapp.com/devbook" title="DevBook" className="anchor" target="_blank" rel="noreferrer" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/devbook.png`} alt="Y2matecom" width="400" height="250" />
@@ -164,7 +164,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://react-dev-todo.netlify.app/" title="React Todo" className="anchor" target="_blank" >
+                            <a href="https://react-dev-todo.netlify.app/" title="React Todo" className="anchor" target="_blank" rel="noreferrer" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/react-todo.png`} alt="React Todo" width="400" height="250" />
@@ -182,7 +182,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="" title="React Dev Portfolio" className="anchor" target="_blank" >
+                            <a href="" title="React Dev Portfolio" className="anchor" target="_blank" rel="noreferrer" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/portfolio.png`} alt="React Todo" width="400" height="250" />
