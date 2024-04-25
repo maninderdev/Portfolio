@@ -7,11 +7,14 @@ function Header(){
             btnToggle.classList.add('sm-active');
         }
     };
-    function handleThrou(){
-        console.log(this);
+    const handleThrou = e => {
+        var dataTo = e.target.getAttribute('data-to');
+        document.getElementById(dataTo).scrollIntoView({
+            behavior: 'smooth'
+        });
     }
     return (
-        <div className="header">
+        <div className="header" id="header">
             <div className="container">
                 <div className="header-inner">
                     <div className="logo">
@@ -20,16 +23,16 @@ function Header(){
                     <div className="navbar">
                         <ul className="main-menu">
                             <li className="menu-item">
-                                <a href="#" className="link" onClick={() => {handleThrou()}}>Home</a>
+                                <span className="link" onClick={handleThrou} data-to="header">Home</span>
                             </li>
                             <li>
-                                <a href="#" className="link" onClick={()=> {handleThrou()}}>Projects</a>
+                                <span className="link" onClick={handleThrou} data-to="projects">Projects</span>
                             </li>
                             <li>
-                                <a href="#" className="link">Experience</a>
+                                <span className="link" onClick={handleThrou} data-to="experience">Experience</span>
                             </li>
                             <li>
-                                <a href="#" className="link">Contact</a>
+                                <span className="link" onClick={handleThrou} data-to="contact">Contact</span>
                             </li>
                         </ul>
                         <button className="mobile-toggle" id="menu-toggle" onClick={() => {handleMenuToggle()}}>

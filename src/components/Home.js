@@ -88,7 +88,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="projects">
+                <div className="projects" id="projects">
                     <h2>Projects</h2>
                     <div className="row">
                         <div className="col">
@@ -201,7 +201,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="experience">
+                <div className="experience" id="experience">
                     <h2>Experience</h2>
                     <div className="experience-listing">
                         <div className="item">

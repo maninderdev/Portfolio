@@ -88,6 +88,7 @@ ul.main-menu {
 ul.main-menu .link {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul.main-menu li {
@@ -120,8 +121,11 @@ h6 {
 
 .footer-inner .mail-wrapper a {
     color: #C5C5C5;
+    transition: all 0.3s ease;
 }
-
+.footer-inner .mail-wrapper a:hover {
+    color: #fff;
+}
 .footer-inner .mail-wrapper a svg {
     stroke: #fff;
     margin-right: 6px;
@@ -143,8 +147,11 @@ h6 {
 .footer-inner .social-listing ul li {
     margin-right: 20px;
     font-size: 20px;
+    transition: all 0.3s ease;
 }
-
+.footer-inner .social-listing ul li:hover {
+    transform: translateY(-4px);
+}
 .footer-inner .mail-wrapper {
     margin-bottom: 25px;
 }
@@ -246,8 +253,11 @@ span.gradient {
     padding: 16px 34px;
     border-radius: 50px;
     display: inline-block;
+    transition: all 0.3s ease;
 }
-
+.hero-banner .cta-wrapper .primary-btn:hover {
+    opacity: 0.8;
+}
 .props {
     padding: 50px 0;
 }
