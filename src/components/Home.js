@@ -182,7 +182,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="" title="React Dev Portfolio" className="anchor" target="_blank" rel="noreferrer" >
+                            <a href="https://maninder-dev.netlify.app/" title="React Dev Portfolio" className="anchor" target="_blank" rel="noreferrer" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/portfolio.png`} alt="React Todo" width="400" height="250" />
