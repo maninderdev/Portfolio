@@ -92,7 +92,7 @@ function Home() {
                     <h2>Projects</h2>
                     <div className="row">
                         <div className="col">
-                            <a href="https://ishwar-coaching-centre.000webhostapp.com/ishwar_coaching/" className="anchor" target="_blank" rel="noreferrer">
+                            <a href="https://maninder-dev.000webhostapp.com/ishwar-coaching/" className="anchor" target="_blank" rel="noreferrer">
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/ishwar-coaching.png`} alt="Ishwar Coaching Center" width="400" height="250" />
@@ -146,7 +146,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://ishwar-coaching-centre.000webhostapp.com/devbook" title="DevBook" className="anchor" target="_blank" rel="noreferrer" >
+                            <a href="https://maninder-dev-projects.000webhostapp.com/devbook" title="DevBook" className="anchor" target="_blank" rel="noreferrer" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/devbook.png`} alt="Y2matecom" width="400" height="250" />
