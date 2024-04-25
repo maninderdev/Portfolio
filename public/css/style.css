@@ -17,17 +17,18 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary-color: #161513;
     --header-color: #222222;
     --secondary-color: #1976D2;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-a, button{
+a,
+button {
     cursor: pointer;
 }
 
@@ -35,7 +36,8 @@ a {
     color: inherit;
     text-decoration: none;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -49,8 +51,11 @@ body{
 .header {
     background-color: var(--header-color);
     padding: 16px 0;
+    border-bottom: 1px solid #3b3b3b;
 }
-
+.header .logo{
+    display: flex;
+}
 .container {
     padding: 0 20px;
     max-width: 1100px;
@@ -63,11 +68,13 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 .header .logo img {
     object-fit: contain;
     width: 150px;
     height: auto;
 }
+
 ul.main-menu {
     padding: 0;
     margin: 0;
@@ -141,10 +148,12 @@ h6 {
 .footer-inner .mail-wrapper {
     margin-bottom: 25px;
 }
-.main-content{
+
+.main-content {
     position: relative;
 }
-.main-content:before{
+
+.main-content:before {
     content: "";
     position: absolute;
     top: 0;
@@ -157,7 +166,8 @@ h6 {
     background-position: center top;
     background-size: 100% auto;
 }
-.main-content:after{
+
+.main-content:after {
     content: "";
     position: absolute;
     top: 0;
@@ -170,10 +180,12 @@ h6 {
     background-position: center top;
     background-size: 100% auto;
 }
-.main-content .container{
+
+.main-content .container {
     position: relative;
     z-index: 4;
 }
+
 .hero-banner {
     text-align: center;
     padding: 100px 0 50px;
@@ -203,7 +215,7 @@ h6 {
     font-size: 58px;
     font-weight: 500;
     margin: 0 0 10px;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 h2 {
@@ -211,6 +223,7 @@ h2 {
     margin: 0 0 30px;
     font-size: 40px;
 }
+
 span.gradient {
     background: linear-gradient(to right, #FF8660 0%, #8000FF 100%);
     -webkit-background-clip: text;
@@ -218,6 +231,7 @@ span.gradient {
     font-size: inherit;
     font-weight: 700;
 }
+
 .hero-banner .description {
     color: #C5C5C5;
     width: 800px;
@@ -274,7 +288,7 @@ span.gradient {
     margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
-.projects .row > .col {
+.projects .row>.col {
     flex: 0 0 auto;
     width: 50%;
 }
@@ -309,11 +323,13 @@ span.gradient {
     height: 100%;
     object-fit: cover;
     object-position: top;
-    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    transition: transform 0.3s cubic-bezier(.4, 0, .2, 1);
 }
+
 .projects a.anchor:hover .thumb img {
     transform: scale(1.1);
 }
+
 .project-card .content {
     padding: 20px 22px;
     display: flex;
@@ -375,23 +391,6 @@ span.gradient {
 .experience .item {
     margin-bottom: 60px;
 }
-ul.main-menu {
-    position: fixed;
-    top: 81px;
-    left: 0;
-    width: 320px;
-    max-width: 100%;
-    background-color: var(--header-color);
-    bottom: 0;
-    z-index: 9;
-    display: block;
-    padding: 30px 20px;
-    border-top: 1px solid #3b3b3b;
-}
-
-ul.main-menu li {
-    width: 100%;
-}
 
 button#menu-toggle {
     width: 32px;
@@ -400,7 +399,7 @@ button#menu-toggle {
     border: none;
     outline: none;
     box-shadow: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     padding: 8px 6px;
@@ -408,21 +407,145 @@ button#menu-toggle {
 }
 
 button#menu-toggle span.bar {
-    height: 2px;
+    height: 1.5px;
     width: 100%;
     display: inline-block;
     background: #fff;
+    transition: all 0.25s cubic-bezier(.4,0,.2,1);
 }
-@media(max-width: 767px){
+
+@media(max-width: 767px) {
     .header .header-inner {
         flex-wrap: wrap;
     }
-    
+
     .header .header-inner .main-menu li {
-        margin: 0 6px;
+        margin: 0 6px 20px;
     }
-    
+
     .header .logo img {
         width: 120px;
+    }
+    button#menu-toggle {
+        display: flex;
+    }
+    .header {
+        padding: 10px 0;
+    }
+    ul.main-menu {
+        position: fixed;
+        top: 81px;
+        left: 0;
+        width: 320px;
+        max-width: 100%;
+        background-color: var(--header-color);
+        bottom: 0;
+        z-index: 9;
+        display: block;
+        padding: 30px 20px;
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: all 0.3s cubic-bezier(.4,0,.2,1);
+    }
+    .navbar.sm-active ul.main-menu {
+        transform: translateX(0);
+        visibility: visible;
+    }
+    ul.main-menu li {
+        width: 100%;
+    }
+
+    .navbar.sm-active button#menu-toggle span.bar.bar-2 {
+        transform: translate(-10px, 0);
+        opacity: 0;
+    }
+
+    .navbar.sm-active button#menu-toggle .bar.bar-1 {
+        transform: translate(3px, 0) rotate(45deg);
+    }
+
+    .navbar.sm-active button#menu-toggle .bar.bar-3 {
+        transform: translate(3px, 0) rotate(-45deg);
+    }
+
+    button#menu-toggle span.bar.bar-1 {
+        transform-origin: left;
+    }
+
+    button#menu-toggle span.bar.bar-3 {
+        transform-origin: left;
+    }
+    .hero-banner h1 {
+        font-size: 42px;
+    }
+    
+    h2 {
+        font-size: 23px;
+    }
+    
+    .hero-banner {
+        padding: 50px 0 30px;
+    }
+    
+    .hero-banner .avatar {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-banner .cta-wrapper .primary-btn {
+        padding: 14px 30px;
+    }
+    
+    .props {
+        padding: 35px 0 25px;
+    }
+    
+    .skills .item {
+        font-size: 15px;
+    }
+    
+    .props h2 {
+        padding: 0 10px;
+    }
+    
+    .projects {
+        padding: 30px 0 10px;
+    }
+    
+    .projects .row>.col {
+        width: 100%;
+    }
+    
+    .project-card .content {
+        padding: 20px 15px;
+    }
+    
+    .project-card .content h6 {
+        font-size: 16px;
+    }
+    
+    .project-card .content .label {
+        font-size: 13px;
+    }
+    
+    .project-card .content svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .experience {
+        padding: 30px 0 20px;
+    }
+    
+    .experience .item .head {flex-wrap: wrap;}
+    
+    .experience .item .head h6 {
+        width: 100%;
+        font-size: 22px;
+    }
+    
+    .footer {
+        padding: 50px 0;
     }
 }

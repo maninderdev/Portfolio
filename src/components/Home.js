@@ -92,7 +92,7 @@ function Home() {
                     <h2>Projects</h2>
                     <div className="row">
                         <div className="col">
-                            <a href="https://ishwar-coaching-centre.000webhostapp.com/" className="anchor">
+                            <a href="https://ishwar-coaching-centre.000webhostapp.com/ishwar_coaching/" className="anchor" target="_blank">
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/ishwar-coaching.png`} alt="Ishwar Coaching Center" width="400" height="250" />
@@ -110,7 +110,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://nanaksarkaleran.000webhostapp.com/" title="Nanaksar Kaleran" className="anchor" >
+                            <a href="https://nanaksarkaleran.000webhostapp.com/" title="Nanaksar Kaleran" className="anchor" target="_blank" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/nanaksar-kaleran.png`} alt="Nanaksar Kaleran" width="400" height="250" />
@@ -128,7 +128,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://y2matecom.com/" title="Y2mate Com" className="anchor" >
+                            <a href="https://y2matecom.com/" title="Y2mate Com" className="anchor" target="_blank" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/y2matecom.png`} alt="Y2matecom" width="400" height="250" />
@@ -146,10 +146,10 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="" title="DevBook" className="anchor" >
+                            <a href="https://ishwar-coaching-centre.000webhostapp.com/devbook" title="DevBook" className="anchor" target="_blank" >
                                 <div className="project-card">
                                     <div className="thumb">
-                                        <img src={`${process.env.PUBLIC_URL}/images/y2matecom.png`} alt="Y2matecom" width="400" height="250" />
+                                        <img src={`${process.env.PUBLIC_URL}/images/devbook.png`} alt="Y2matecom" width="400" height="250" />
                                     </div>
                                     <div className="content">
                                         <div className="content-inner">
@@ -164,7 +164,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="https://react-dev-todo.netlify.app/" title="React Todo" className="anchor" >
+                            <a href="https://react-dev-todo.netlify.app/" title="React Todo" className="anchor" target="_blank" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/react-todo.png`} alt="React Todo" width="400" height="250" />
@@ -182,7 +182,7 @@ function Home() {
                             </a>
                         </div>
                         <div className="col">
-                            <a href="" title="React Dev Portfolio" className="anchor" >
+                            <a href="" title="React Dev Portfolio" className="anchor" target="_blank" >
                                 <div className="project-card">
                                     <div className="thumb">
                                         <img src={`${process.env.PUBLIC_URL}/images/portfolio.png`} alt="React Todo" width="400" height="250" />
@@ -215,8 +215,8 @@ function Home() {
                         </div>
                         <div className="item">
                             <div className="head">
-                                <h6>Technerz Software Solutions</h6>
-                                <span className="duration">Oct 2022 - Present</span>
+                                <h6>Technerz Software Solutions (P.T.)</h6>
+                                <span className="duration">Oct 2022 - Dec 2023</span>
                             </div>
                             <div className="description">
                                 At Technerz Software Solutions, I thrived as a frontend developer, specialising in creating interactive user experiences and interfaces that consistently impressed and satisfied clients. Guided by a commitment to excellence, I honed my skills and expanded my knowledge, particularly in advanced JavaScript and PHP concepts. This dedication to growth empowered me to deliver outstanding solutions, driving both client happiness and project success.
