@@ -2,12 +2,17 @@ function Header(){
     const handleMenuToggle = () => {
         var btnToggle = document.getElementById('menu-toggle').closest('.navbar');
         if(btnToggle.classList.contains('sm-active')){
+            document.querySelector('body').classList.remove('overflow-hidden');
             btnToggle.classList.remove('sm-active');
         }else{
+            document.querySelector('body').classList.add('overflow-hidden');
             btnToggle.classList.add('sm-active');
         }
     };
     const handleThrou = e => {
+        var btnToggle = document.getElementById('menu-toggle').closest('.navbar');
+        btnToggle.classList.remove('sm-active');
+        document.querySelector('body').classList.remove('overflow-hidden');
         var dataTo = e.target.getAttribute('data-to');
         document.getElementById(dataTo).scrollIntoView({
             behavior: 'smooth'

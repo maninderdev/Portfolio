@@ -47,7 +47,9 @@ body {
     color: #fff;
     background-color: var(--primary-color);
 }
-
+body.overflow-hidden{
+    overflow: hidden;
+}
 .header {
     background-color: var(--header-color);
     padding: 16px 0;
@@ -55,6 +57,8 @@ body {
 }
 .header .logo{
     display: flex;
+    position: relative;
+    z-index: 12;
 }
 .container {
     padding: 0 20px;
@@ -121,7 +125,7 @@ h6 {
 
 .footer-inner .mail-wrapper a {
     color: #C5C5C5;
-    transition: all 0.3s ease;
+    transition: all 0.24s ease;
 }
 .footer-inner .mail-wrapper a:hover {
     color: #fff;
@@ -147,7 +151,7 @@ h6 {
 .footer-inner .social-listing ul li {
     margin-right: 20px;
     font-size: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.18s ease;
 }
 .footer-inner .social-listing ul li:hover {
     transform: translateY(-4px);
@@ -414,6 +418,8 @@ button#menu-toggle {
     justify-content: space-between;
     padding: 8px 6px;
     margin-left: auto;
+    position: relative;
+    z-index: 12;
 }
 
 button#menu-toggle span.bar {
@@ -425,12 +431,9 @@ button#menu-toggle span.bar {
 }
 
 @media(max-width: 767px) {
-    .header .header-inner {
-        flex-wrap: wrap;
-    }
 
     .header .header-inner .main-menu li {
-        margin: 0 6px 20px;
+        margin: 0 6px 35px;
     }
 
     .header .logo img {
@@ -444,7 +447,7 @@ button#menu-toggle span.bar {
     }
     ul.main-menu {
         position: fixed;
-        top: 81px;
+        top: 0;
         left: 0;
         width: 320px;
         max-width: 100%;
@@ -452,7 +455,7 @@ button#menu-toggle span.bar {
         bottom: 0;
         z-index: 9;
         display: block;
-        padding: 30px 20px;
+        padding: 90px 30px 20px;
         transform: translateX(-100%);
         visibility: hidden;
         transition: all 0.3s cubic-bezier(.4,0,.2,1);
