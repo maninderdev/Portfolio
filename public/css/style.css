@@ -74,9 +74,9 @@ body.overflow-hidden{
 }
 
 .header .logo img {
-    object-fit: contain;
     width: 150px;
-    height: auto;
+    height: 55px;
+    object-fit: contain;
 }
 
 ul.main-menu {
@@ -438,6 +438,7 @@ button#menu-toggle span.bar {
 
     .header .logo img {
         width: 120px;
+        height: 45px;
     }
     button#menu-toggle {
         display: flex;
