@@ -172,7 +172,7 @@ function Home() {
                         <div className="item">
                             <div className="head">
                                 <h6>Technerz Software Solutions (P.T.)</h6>
-                                <span className="duration">Oct 2022 - Dec 2023</span>
+                                <span className="duration">Oct 2022 - Oct 2024</span>
                             </div>
                             <div className="description">
                                 At Technerz Software Solutions, I thrived as a frontend developer, specialising in creating interactive user experiences and interfaces that consistently impressed and satisfied clients. Guided by a commitment to excellence, I honed my skills and expanded my knowledge, particularly in advanced JavaScript and PHP concepts. This dedication to growth empowered me to deliver outstanding solutions, driving both client happiness and project success.
